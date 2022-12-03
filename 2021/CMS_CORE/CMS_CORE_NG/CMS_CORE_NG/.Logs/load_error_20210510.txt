@@ -1,0 +1,577 @@
+___________________________________________________________________
+Timestamp - 05/10/2021 19:52:52 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 28"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 799
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 19:55:18 -05:00 | Level - Error |
+___________________________________________________________________
+EventId : { Id: 1, Name: "UnhandledException" }
+SourceContext : "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware"
+RequestId : "0HM8K2SDTJVEU:00000001"
+RequestPath : "/"
+SpanId : "|b3cdb425-40af0fecc9df52a5."
+TraceId : "b3cdb425-40af0fecc9df52a5"
+ParentId : ""
+ConnectionId : "0HM8K2SDTJVEU"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 799
+ProcessName : "dotnet"
+__________________EXCEPTION DETAILS__________________
+Exception - System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+StackTrace -    at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+Message - The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+Source - Microsoft.AspNetCore.SpaServices.Extensions
+InnerException - 
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:00:44 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 28"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 997
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:02:46 -05:00 | Level - Error |
+___________________________________________________________________
+EventId : { Id: 1, Name: "UnhandledException" }
+SourceContext : "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware"
+RequestId : "0HM8K30QKA2RO:00000001"
+RequestPath : "/"
+SpanId : "|37a14cf-4f01059ea6100d5d."
+TraceId : "37a14cf-4f01059ea6100d5d"
+ParentId : ""
+ConnectionId : "0HM8K30QKA2RO"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 997
+ProcessName : "dotnet"
+__________________EXCEPTION DETAILS__________________
+Exception - System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+StackTrace -    at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+Message - The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+Source - Microsoft.AspNetCore.SpaServices.Extensions
+InnerException - 
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:10:56 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 28"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1225
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:10:58 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1225
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:10:58 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1225
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:11:02 -05:00 | Level - Error |
+___________________________________________________________________
+EventId : { Id: 1, Name: "UnhandledException" }
+SourceContext : "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware"
+RequestId : "0HM8K36H36PAP:00000001"
+RequestPath : "/"
+SpanId : "|9770b05a-455a80f49004be92."
+TraceId : "9770b05a-455a80f49004be92"
+ParentId : ""
+ConnectionId : "0HM8K36H36PAP"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1225
+ProcessName : "dotnet"
+__________________EXCEPTION DETAILS__________________
+Exception - System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+StackTrace -    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+Message - One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+))
+Source - System.Private.CoreLib
+InnerException - System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: sh: --port: command not found
+
+npm ERR! code ELIFECYCLE
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:12:18 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 28"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1294
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:14:20 -05:00 | Level - Error |
+___________________________________________________________________
+EventId : { Id: 1, Name: "UnhandledException" }
+SourceContext : "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware"
+RequestId : "0HM8K379CNSGN:00000001"
+RequestPath : "/"
+SpanId : "|f4bd1bc3-4b57a8f789706b51."
+TraceId : "f4bd1bc3-4b57a8f789706b51"
+ParentId : ""
+ConnectionId : "0HM8K379CNSGN"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1294
+ProcessName : "dotnet"
+__________________EXCEPTION DETAILS__________________
+Exception - System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+StackTrace -    at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+Message - The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+Source - Microsoft.AspNetCore.SpaServices.Extensions
+InnerException - 
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:15:03 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 28"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1334
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:15:15 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1334
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:15:15 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1334
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:20:15 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 29"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1376
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:20:28 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1376
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:20:28 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1376
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:22:18 -05:00 | Level - Error |
+___________________________________________________________________
+EventId : { Id: 1, Name: "UnhandledException" }
+SourceContext : "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware"
+RequestId : "0HM8K3BNOOU1L:00000001"
+RequestPath : "/"
+SpanId : "|a418b6d3-4da74305458a0ab8."
+TraceId : "a418b6d3-4da74305458a0ab8"
+ParentId : ""
+ConnectionId : "0HM8K3BNOOU1L"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1376
+ProcessName : "dotnet"
+__________________EXCEPTION DETAILS__________________
+Exception - System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+StackTrace -    at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+Message - The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+Source - Microsoft.AspNetCore.SpaServices.Extensions
+InnerException - 
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:22:34 -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 29"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1404
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:22:46 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1404
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 05/10/2021 20:22:46 -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1404
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:23:49 PM -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 29"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1438
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:24:02 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1438
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:24:02 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1438
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:25:49 PM -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 29"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1473
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:26:02 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1473
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:26:02 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1473
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:35:58 PM -05:00 | Level - Error |
+___________________________________________________________________
+Error : "Attempted to divide by zero."
+StackTrace : "   at CMS_CORE_NG.Program.Main(String[] args) in /Users/j4cksn0w/Documents/Curso Angular/2021/CMS_CORE/CMS_CORE_NG/CMS_CORE_NG/Program.cs:line 29"
+InnerException : null
+Source : "CMS_CORE_NG"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1624
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:36:12 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1624
+ProcessName : "dotnet"
+__________________________________________________________
+___________________________________________________________________
+Timestamp - 5/10/2021 8:36:12 PM -05:00 | Level - Error |
+___________________________________________________________________
+SourceContext : "Microsoft.AspNetCore.SpaServices"
+Application : "CMS_APP"
+MachineName : "MacBook-Air-de-Armando"
+CurrentManagedThreadId : 1
+OSVersion : "Unix 20.3.0.0"
+Version : "3.1.14"
+UserName : "j4cksn0w"
+ProcessId : 1624
+ProcessName : "dotnet"
+__________________________________________________________

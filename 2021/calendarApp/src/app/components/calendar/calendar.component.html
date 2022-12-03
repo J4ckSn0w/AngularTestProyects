@@ -1,0 +1,358 @@
+<div class="row">
+    <div class="col-md-2 align-self-start">
+        <div class="col justify-content-start">
+            <h4>Agenda Financiera</h4>
+            <br>
+            <button class="btn btn-primary rounded-pill" (click)="modal.open(newDateContent)">Agendar cita con ejecutivo.</button>
+            <br>
+            <br>
+            <button class="btn btn-secondary rounded-pill">Nuevo recordatorio</button>
+        </div>
+    </div>
+    <div class="col-md-6 align-self-end">
+        <div class="row text-center mt-3 align-items-end">
+            <div class="col-md-12">
+                <div class="btn-group">
+                    <div class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
+                        Anterior
+                    </div>
+                    <div class="btn btn-outline-secondary" mwlCalendarToday [(viewDate)]="viewDate">
+                        Hoy
+                    </div>
+                    <div class="btn btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
+                        Siguiente
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'es' }}</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="btn-group">
+                    <div class="btn btn-primary" (click)="setView(CalendarView.Month)" [class.active]="view === CalendarView.Month">
+                        Mes
+                    </div>
+                    <div class="btn btn-primary" (click)="setView(CalendarView.Week)" [class.active]="view === CalendarView.Week">
+                        Semana
+                    </div>
+                    <div class="btn btn-primary" (click)="setView(CalendarView.Day)" [class.active]="view === CalendarView.Day">
+                        Dia
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div [ngSwitch]="view">
+
+            <mwl-calendar-month-view [locale]="locale" *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [activeDayIsOpen]="activeDayIsOpen" (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)"
+                (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-month-view>
+
+            <mwl-calendar-week-view [locale]="locale" *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events" [refresh]="refresh" (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-week-view>
+
+            <mwl-calendar-day-view [locale]="locale" *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events" [refresh]="refresh" (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-day-view>
+
+        </div>
+    </div>
+    <div class="col-md-4 align-self-start">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="text-align-center">Negociaciones</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="table table-borderless">
+                            <thead>
+                                <th><button class="btn btn-outline-primary"><i class="fas fa-angle-left"></i></button></th>
+                                <th colspan="2" style="text-align: left;" colspan="2">
+                                    <div class="text-primary">Activas</div>
+                                </th>
+                                <th><button class="btn btn-outline-primary"><i class="fas fa-angle-right"></i></button></th>
+                            </thead>
+                            <tr class="text-primary">
+                                <td>Institucion Bancaria</td>
+                                <td>BBVA Bancomer</td>
+                                <td>Comprobante de pago</td>
+                            </tr>
+                            <tr class="text-primary">
+                                <td>Credito</td>
+                                <td>3495u395</td>
+                                <td rowspan='2'><button class="btn btn-outline-info">Subir</button></td>
+                            </tr>
+                            <tr class="text-primary">
+                                <td>Monto</td>
+                                <td>$897,543.98</td>
+
+                            </tr>
+                            <tr class="text-primary">
+                                <td>Estatus</td>
+                                <td>Al corriente</td>
+                                <td>Pagado</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table table-borderless">
+                            <thead class="text-success">
+                                <th><button class="btn btn-outline-success"><i class="fas fa-angle-left"></i></button></th>
+                                <th colspan="2">Finalizadas</th>
+                                <th><button class="btn btn-outline-success"><i class="fas fa-angle-right"></i></button></th>
+                            </thead>
+                            <tr class="text-success">
+                                <td>Institucion Bancaria</td>
+                                <td>BBVA Bancomer</td>
+                                <td>Comprobante de pago</td>
+                            </tr>
+                            <tr class="text-success">
+                                <td>Credito</td>
+                                <td>3495u395</td>
+                                <td rowspan='2'><button class="btn btn-outline-info">Subir</button></td>
+                            </tr>
+                            <tr class="text-success">
+                                <td>Monto</td>
+                                <td>$897,543.98</td>
+
+                            </tr>
+                            <tr class="text-success">
+                                <td>Estatus</td>
+                                <td>Al corriente</td>
+                                <td>Pagado</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table table-borderless">
+                            <thead>
+                                <th><button class="btn btn-outline-danger"><i class="fas fa-angle-left"></i></button></th>
+                                <th colspan="2" class="text-danger">Atrasadas</th>
+                                <th><button class="btn btn-outline-danger"><i class="fas fa-angle-right"></i></button></th>
+                            </thead>
+                            <tr class="text-danger">
+                                <td>Institucion Bancaria</td>
+                                <td>BBVA Bancomer</td>
+                                <td>Comprobante de pago</td>
+                            </tr>
+                            <tr class="text-danger">
+                                <td>Credito</td>
+                                <td>3495u395</td>
+                                <td rowspan='2'><button class="btn btn-outline-info">Subir</button></td>
+                            </tr>
+                            <tr class="text-danger">
+                                <td>Monto</td>
+                                <td>$897,543.98</td>
+
+                            </tr>
+                            <tr class="text-danger">
+                                <td>Estatus</td>
+                                <td>Al corriente</td>
+                                <td>Pagado</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--
+        <div class="row align-items-center">
+            <div class="row">
+                <div class="col">
+                    Activas
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col align-self-center">
+                    Institucion bancaria
+                </div>
+                <div class="col align-self-center">
+                    BBVA Bancomer
+                </div>
+                <div class="col align-self-center">
+                    Opciones
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col align-self-center">
+                    Credito
+                </div>
+                <div class="col align-self-center">
+                    34958u395
+                </div>
+                <div class="col align-self-center">
+                    Subir
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col align-self-center">
+                    Monto
+                </div>
+                <div class="col align-self-center">
+                    $897,543.98
+                </div>
+                <div class="col align-self-center">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col align-self-center">
+                    Estatus
+                </div>
+                <div class="col align-self-center">
+                    Al corriente
+                </div>
+                <div class="col align-self-center">
+                    Pagado
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>
+<!--
+<div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">coladlkasasdlasklasasdaslkdaksdklaskldaklsdaklsdkladsklaskdlalksdaklsdkladskl</div>
+</div>
+<div class="row">
+    <div class="col-8">col-8</div>
+    <div class="col-4">col-4</div>
+</div>-->
+
+
+<!-- Everything you see below is just for the demo, you don't need to include it in your app -->
+
+<br /><br /><br />
+
+
+<ng-template #modalContent let-close="close">
+    <div class="modal-header">
+        <h5 class="modal-title">{{modalData?.event.title}}</h5>
+        <button type="button" class="close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+        <h3>Detalles</h3>
+        <span> <b>Fecha: </b><div class="text-primary"> {{modalData?.event.start | date}}</div></span> <br>
+        <span> <b>Hora inicio: </b><div class="text-primary"> {{modalData?.event.start | date:'shortTime'}}</div></span> <br>
+        <span> <b>Hora fin: </b> <div class="text-danger"> {{modalData?.event.end | date:'shortTime'}}</div></span>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="close()">
+        OK
+      </button>
+    </div>
+</ng-template>
+
+<ng-template #newDateContent let-modal let-close="close">
+    <div class="modal-body">
+        <div class="card my-4">
+            <div class="card-header">
+                <h2>Nueva Cita.</h2>
+            </div>
+            <div class="card-body">
+                <form role="form" novalidate [formGroup]="newEventForm" class="row">
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" formControlName="name">
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Descripción</label>
+                        <input type="text" class="form-control" placeholder="Descripción" formControlName="description">
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Color de Actividad</label>
+                        <input type="color" class="form-control" [(ngModel)]="color">
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Fecha</label>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="fecha" ngbDatepicker #d="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Hora incio</label>
+                        <ngb-timepicker [(ngModel)]="timeStart"></ngb-timepicker>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Hora Fin</label>
+                        <ngb-timepicker [(ngModel)]="timeEnd"></ngb-timepicker>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12">
+
+                    </div>
+                    <button type="button" class="btn btn-primary mx-auto" (click)="onSubmit()">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #editDateContent let-modal let-close="EditClose">
+    <div class="modal-body">
+        <div class="card my-4">
+            <div class="card-header">
+                <h2>Editar Cita.</h2>
+            </div>
+            <div class="card-body">
+                <form role="form" novalidate [formGroup]="editEventForm" class="row">
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" formControlName="name" [(ngModel)]="currentEvent.title">
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Descripción</label>
+                        <input type="text" class="form-control" placeholder="Descripción" formControlName="description" [(ngModel)]="currentEvent.title">
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Color de Actividad</label>
+                        <input type="color" class="form-control" [(ngModel)]="currentEvent.color.primary">
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label>Fecha</label>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="mockDate" ngbDatepicker #d="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Hora incio</label>
+                        <ngb-timepicker [(ngModel)]="timeStart"></ngb-timepicker>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label>Hora Fin</label>
+                        <ngb-timepicker [(ngModel)]="timeEnd"></ngb-timepicker>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12">
+
+                    </div>
+                    <button type="button" class="btn btn-primary mx-auto" (click)="fnUpdate()">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

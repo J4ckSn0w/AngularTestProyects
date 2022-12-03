@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/*Boostrap*/
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/*Angular Calendar*/
+
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
